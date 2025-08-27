@@ -9,5 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: helloworld
-        run: echo "hello world!"
+      - name: checkout
+        uses: actions/checkout@v5.0.0
+        
+      - name: test action
+        run: ls -lah
